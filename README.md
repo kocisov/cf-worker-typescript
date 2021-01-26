@@ -10,13 +10,13 @@ wrangler generate <project-name> https://github.com/Kocisov/cf-worker-typescript
 git clone https://github.com/Kocisov/cf-worker-typescript.git <project-name>
 ```
 
-### Add configuration to `wrangler.toml`
+### Configure `wrangler.toml`
 
 ```toml
-name = "<worker-name>" (name of your worker -> worker-name.(account).workers.dev)
-account_id = "<account-id>" (https://dash.cloudflare.com > Right side (Workers) > Account ID)
-zone_id = "<zone-id>" (Cloudflare domain ID also found on https://dash.cloudflare.com)
-route = "<route>" (Route for worker (eg. worker-name.(account).workers.dev))
+name = "<worker-name>" # (name of your worker -> worker-name.(account).workers.dev)
+account_id = "<account-id>" # (https://dash.cloudflare.com > Right side (Workers) > Account ID)
+zone_id = "<zone-id>" # (Cloudflare domain ID also found on https://dash.cloudflare.com)
+route = "<route>" # (Route for worker (eg. worker-name.(account).workers.dev))
 ```
 
 ### Add KV namespaces to `src/types.d.ts` for TypeScript definitions on global namespace
